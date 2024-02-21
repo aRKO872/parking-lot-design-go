@@ -1,6 +1,7 @@
 package accounts
 
 import (
+	display_board "github/parking-lot-lld/components/display-board"
 	"github/parking-lot-lld/components/miscallaneous"
 	parking_spot "github/parking-lot-lld/components/parking-spot"
 	enum "github/parking-lot-lld/enums"
@@ -46,6 +47,6 @@ func (a Admin) AddParkingSpot(floorName string, parkingSpot parking_spot.Parking
 	return true
 }
 
-func (a Admin) AddDisplayBoard(floorName string) bool {
+func (a Admin) AddDisplayBoard(floorName string, displayBoard display_board.DisplayBoard) bool {
 	return true
 }
